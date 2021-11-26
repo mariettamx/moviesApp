@@ -1,0 +1,36 @@
+[
+    {
+        "id": 1,
+      "film": "Zack and Miri Make a Porno",
+      "genre": "Romance",
+      "leadStudio": "The Weinstein Company",
+      "audienceScorePercentage": 70,
+      "profitability": 1.747541667,
+      "rottenTomatoesPercentage": 64,
+      "worldwideGross": "$41.94 ",
+      "year": 2008
+    },
+    {
+        "id": 2,
+      "film": "Youth in Revolt",
+      "genre": "Comedy",
+      "leadStudio": "The Weinstein Company",
+      "audienceScorePercentage": 52,
+      "profitability": 1.09,
+      "rottenTomatoesPercentage": 68,
+      "worldwideGross": "$19.62 ",
+      "year": 2010
+    },
+    {
+        "id": 3,
+      "film": "You Will Meet a Tall Dark Stranger",
+      "genre": "Comedy",
+      "leadStudio": "Independent",
+      "audienceScorePercentage": 35,
+      "profitability": 1.211818182,
+      "rottenTomatoesPercentage": 43,
+      "worldwideGross": "$26.66 ",
+      "year": 2010
+    }
+  ]
+  

@@ -1,0 +1,28 @@
+<h1>{{movie.film}}</h1>
+<hr>
+<ul>
+    <li><strong>Genre:</strong> {{movie.genre}}</li>
+    <li><strong>Studio:</strong> {{movie.leadStudio}}</li>
+    <li><strong>User Rating:</strong> {{movie.audienceScorePercentage / 100 | percent}}</li>
+    <li><strong>Profitability:</strong> {{movie.profitability / 100 | percent}}</li>
+    <li><strong>Rotten Tomatoes Raiting:</strong> {{movie.rottenTomatoesPercentage / 100 | percent}}</li>
+    <li><strong>World Wide Gross:</strong>{{movie.worldwideGross}}</li>
+    <li><strong>Year:</strong> {{movie.year}}</li>
+</ul>
+
+<h2>Your comments</h2>
+<ul *ngFor="let comment of comments, i as index">
+    <li>
+        <strong>{{comment.name}}</strong>: {{comment.message}}
+    </li>
+</ul>
+
+<form  [formGroup]="commentsForm" (ngSubmit)="addComments()">
+    <div>
+        <input type="text" class="details_input" formControlName="message" (change)="setComment($event)" placeholder="Your comments">
+    </div>
+    <div>
+        <input type="text" class="details_input" formControlName="name" (change)="setName($event)" placeholder="Your name" >
+    </div>
+    <button class="details_btn"  type="submit">Send Comments</button>
+</form>
